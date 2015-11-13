@@ -2,4 +2,9 @@
 	<h2>Welcome! Please log in.</h2>
 <% } else { %>
 	<h2>Hello, <%= user.displayName %>.</h2>
+	<strong>id</strong>: <%= user.id %><br>
+	<strong>familyName</strong>: <%= user.name.familyName %><br>
+	<strong>givenName</strong>: <%= user.name.givenName %><br>
+	<strong>gender</strong>: <%= user.gender %><br>
+	<img src="<%= user.photos[0].value %>"></img><br>
 <% } %>
